@@ -1,4 +1,9 @@
 # A structured list of saved recipients with their bank details and current balances
+
+print("******")
+print("Welcome to your Bank App")
+print("******")
+
 recipients = [
     {
         "name": "Amina Bello",
