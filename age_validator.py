@@ -14,5 +14,6 @@ while not (14 <= int(age) <= 100):
     print("Please you must be between the ages of 14 and 100")
     age = int(input("Please re-enter your age again now: "))
 
-
+print("************")
 print(f"You are {age}years old, congratulations you will be {age + 10}years old in the next decade.")
+print("************")

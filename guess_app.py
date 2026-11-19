@@ -8,8 +8,11 @@
 # 5. When they win, say how many attempts it took
 # 6. If they run out, reveal the number
 
-
-guess_no = input("Enter your guess number: ").strip()
+print("*************")
+print("Hi, Welcome to your favourite guess app")
+print("Let's play!")
+print("*************")
+guess_no = input("Please enter your guess number: ").strip()
 
 while not guess_no.isdigit():
     print("Guess number must be a numeric value")
@@ -39,7 +42,9 @@ while attempts < max_attempts or not ((secret_number) == 42):
         break
         
     if int(secret_number) == 42:
+        print("**********")
         print(f" Congratulations to you, it took you {attempts +1}times to guess the secret number {secret_number} correctly")
+        print("**********")
         break
 
 

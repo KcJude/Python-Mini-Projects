@@ -1,5 +1,9 @@
 # Registration and login system
 
+print("*******")
+print("Hello Client, Welcome!")
+print("*******")
+
 users = []
 
 while True:
@@ -26,16 +30,25 @@ while True:
         
         for user in users:
             if user["email"] == user_email:
-
+                max_attempt = 3
+                attempt = 0
                 user_password = input("Please enter your password:  ").strip()
                 if user_password == user["password"]:
                     print("************************************************")
                     print("Login successful..")
                     print("************************************************")
+                    attempt += 1
                     break
+                    
                 while user_password != user["password"]:
-                    print("Incorrect password.. please try again.")
+                    if attempt > max_attempt:
+                        print()
+                        print("You have exhausted your available attempts.")
+                        print()
+                        break
+                    print("Incorrect password..., please try again.")
                     user_password = input("Please enter your correct password:  ")
+                    attempt += 1
                 else:
                     print()
                     print("************************************************")
