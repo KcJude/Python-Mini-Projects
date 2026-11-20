@@ -1,5 +1,9 @@
 # The below files in this project will be ignored by Github
 
+/env
+
+.env
+
 expense_recorder.py
 
 pract.py
@@ -16,3 +20,4 @@ program_1.py
 
 program_2.py
 
+pract2011.py
